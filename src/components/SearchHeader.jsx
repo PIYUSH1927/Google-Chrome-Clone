@@ -11,6 +11,7 @@ export default function SearchHeader() {
       <div className="flex w-full p-6 items-center justify-between">
         <Link href={"/"}>
           <Image
+            
             width="120"
             height="40"
             src="https://cdn2.downdetector.com/static/uploads/logo/Google-new_19.png"

@@ -19,12 +19,12 @@ export default function SearchBox() {
   }
   return (
     <form
-      className="flex border border-gray-200 rounded-full shadow-lg px-6 py-2 ml-10 mr-5 flex-grow max-w-3xl items-center"
+      className="flex border border-gray-200 rounded-full shadow-lg px-6 py-2 sm:ml-10 mr-5 flex-grow max-w-3xl items-center"
       onSubmit={handleSubmit}
     >
       <input
         type="text"
-        className="w-full focus:outline-none"
+        className=" w-60 sm:w-full focus:outline-none"
         value={term}
         onChange={(e) => setTerm(e.target.value)}
       />

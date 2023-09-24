@@ -10,7 +10,7 @@ export default async function WebSearchPage({ searchParams }) {
     `https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}&start=${startIndex}`
   );
 
-  if (!response.ok) {   
+  if (!response.ok) { 
     console.log(response);
     throw new Error("Something went wrong");
   }
